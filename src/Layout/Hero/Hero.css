@@ -1,0 +1,91 @@
+.Hero {
+  width: 100%;
+  height: 730px;
+  background-image: url("../../assets/Images/Hero.png");
+  background-repeat: no-repeat;
+  background-size: 100% 102%;
+}
+.Hero-main {
+  width: 85%;
+  margin: auto;
+  position: relative;
+  height: 80%;
+  /* background-color: #ad00ff; */
+  display: flex;
+  align-items: center;
+}
+.gradient-circle {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(148.8deg, #00d1ff -7.63%, #ad00ff 101.02%);
+  box-shadow: inset 25px -25px 30px rgba(0, 0, 0, 0.25),
+    inset -25px 25px 30px rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  position: absolute;
+}
+.hero-circle-1 {
+  top: 5%;
+  left: 5%;
+}
+.hero-circle-2 {
+  right: 0%;
+  top: 40%;
+}
+.hero-circle-3 {
+  bottom: 0;
+  left: 0;
+}
+.Hero-main h1 {
+  font-weight: 500;
+  font-size: 116px;
+  line-height: 141px;
+  color: white;
+}
+.Hero-main h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px white;
+  font-family: sans-serif;
+}
+.Main-btn {
+  width: 229px;
+  height: 54px;
+  background: linear-gradient(
+    92.82deg,
+    #00d1ff 1.04%,
+    #ff50e3 49.12%,
+    #ad00ff 96.6%
+  );
+  border-radius: 50px;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+.Main-btn:hover {
+  scale: 1.08;
+}
+@media screen and (max-width: 768px) {
+  .Hero {
+    /* background-size: 100% 75%; */
+    height: 600px;
+  }
+  .Hero-main h1 {
+    font-size: 90px;
+    line-height: 100px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .Hero {
+    background-size: 300% 105%;
+    background-position: center;
+  }
+  .Hero-main h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+  .Main-btn {
+    width: 180px;
+  }
+}

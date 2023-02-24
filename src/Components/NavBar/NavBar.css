@@ -1,0 +1,152 @@
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  z-index: 99;
+}
+.Navbar {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Nav-logo {
+  width: 20%;
+
+  display: flex;
+  align-items: center;
+}
+.Main-nav {
+  width: 80%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.Nav-links {
+  width: 60%;
+}
+.Nav-links ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Nav-links ul li a {
+  color: white;
+}
+.Nav-Social {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Nav-Social svg {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.Hamburger {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+}
+.Hamburger {
+  display: none;
+}
+.Nav-close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+.stickynavbar {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(
+    92.82deg,
+    #00d1ff 1.04%,
+    #ff50e3 49.12%,
+    #ad00ff 96.6%
+  );
+}
+
+@media (hover: hover) {
+  .Nav-Social svg:hover {
+    scale: 1.5;
+    rotate: 360deg;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .Main-nav {
+    justify-content: space-around;
+  }
+  .Nav-links {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .Nav-links {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Nav-logo {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .Navbar {
+    justify-content: space-between;
+  }
+  .Hamburger {
+    display: flex;
+  }
+  .Hamburger svg {
+    cursor: pointer;
+  }
+  .Main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 00%;
+    background: linear-gradient(
+      92.82deg,
+      #00d1ff 1.04%,
+      #ff50e3 49.12%,
+      #ad00ff 96.6%
+    );
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.4s linear;
+  }
+  .Main-nav-show {
+    height: 90%;
+    z-index: 99;
+  }
+  .Nav-links {
+    height: 70%;
+  }
+  .Nav-links ul {
+    flex-direction: column;
+  }
+  .Nav-Social {
+    width: 50%;
+  }
+  .Nav-close {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,58 @@
+.Form {
+  width: 100%;
+  background-color: #333;
+}
+.Form-main {
+  width: 85%;
+  margin: auto;
+}
+.Form-main p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+.Form-section {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.Form-section input {
+  width: 270px;
+  height: 50px;
+  /* border: 2px solid transparent; */
+  border-width: 3px;
+  border-style: solid;
+  color: white;
+  padding-left: 10px;
+  outline: none;
+  background-color: transparent;
+  border-image: linear-gradient(
+    92.82deg,
+    #00d1ff 1.04%,
+    #ff50e3 49.12%,
+    #ad00ff 96.6%
+  );
+  border-image-slice: 20%;
+  border-radius: 50px;
+}
+.Form-section button {
+  width: 270px;
+  height: 50px;
+  border-radius: 50px;
+  background: linear-gradient(
+    92.82deg,
+    #00d1ff 1.04%,
+    #ff50e3 49.12%,
+    #ad00ff 96.6%
+  );
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}

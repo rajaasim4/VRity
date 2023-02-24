@@ -1,0 +1,77 @@
+.Team {
+  width: 100%;
+  background-color: #333333;
+  padding: 40px 0px;
+}
+.Team-main {
+  width: 85%;
+  /* background-color: orange; */
+  margin: auto;
+}
+.Team-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.TeamCard {
+  width: 233px;
+  height: 315px;
+}
+.TeamCard-top {
+  height: 80%;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border-radius: 50%;
+  background: linear-gradient(
+    92.82deg,
+    #00d1ff 1.04%,
+    #ff50e3 49.12%,
+    #ad00ff 96.6%
+  );
+  width: 100%;
+}
+.TeamCard-top img {
+  position: absolute;
+  top: -30px;
+  left: 2%;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transition: 0.4s;
+}
+@media (hover: hover) {
+  .TeamCard-top img:hover {
+    scale: 1.09;
+    cursor: pointer;
+  }
+}
+
+.TeamCard-bottom {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.TeamCard-bottom h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.TeamCard-bottom p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #898989;
+}
+@media screen and (max-width: 768px) {
+  .Team-section {
+    row-gap: 40px;
+  }
+}
